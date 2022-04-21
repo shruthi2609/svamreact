@@ -1,8 +1,10 @@
-import DashBoard from "./Components/DashBoard"
+import SampleComponent from "./Components/class compo/SampleComponent"
+import DashBoard from "./Components/functional compo/DashBoard"
 function App(){
     return(
 <>
-<DashBoard useremail="john@gmail.com" username="john henry" profile="https://linkedin.com/in/jayasruthi-loganathan-32a318148/"></DashBoard>
+<SampleComponent fname="john" age="12"></SampleComponent>
+<SampleComponent fname="peter" age="13"></SampleComponent>
 </>
     )
 }
