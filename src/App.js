@@ -9,7 +9,7 @@ function App(){
     return(
 <>
 
-<LifeCycleMethods mg="hello"></LifeCycleMethods>
+<LifeCycleMethods mg="john"></LifeCycleMethods>
 </>
     )
 }
