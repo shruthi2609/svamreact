@@ -5,11 +5,11 @@ import CounterComponent from "./Components/class compo/CounterComponent"
 import ToggleComponent from "./Components/class compo/ToggleComponent"
 import TaskManager from "./Components/class compo/TaskManager"
 import LifeCycleMethods from "./Components/class compo/LifeCycleMethods"
+import FormsComponent from "./Components/class compo/FormsComponent"
 function App(){
     return(
 <>
-
-<LifeCycleMethods mg="john"></LifeCycleMethods>
+<FormsComponent></FormsComponent>
 </>
     )
 }
