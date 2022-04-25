@@ -4,11 +4,12 @@ import DashBoard from "./Components/functional compo/DashBoard"
 import CounterComponent from "./Components/class compo/CounterComponent"
 import ToggleComponent from "./Components/class compo/ToggleComponent"
 import TaskManager from "./Components/class compo/TaskManager"
+import LifeCycleMethods from "./Components/class compo/LifeCycleMethods"
 function App(){
     return(
 <>
 
-<TaskManager></TaskManager>
+<LifeCycleMethods mg="hello"></LifeCycleMethods>
 </>
     )
 }
