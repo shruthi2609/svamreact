@@ -9,10 +9,11 @@ import FormsComponent from "./Components/class compo/FormsComponent"
 import APIFetch from "./Components/class compo/APIFetch"
 import APIFetchDidMount from "./Components/class compo/APIFetchDidMount"
 import AxiosFetch from "./Components/class compo/AxiosFetch"
+import NewsApp from "./Components/class compo/NewsApp"
 function App(){
     return(
 <>
-<AxiosFetch></AxiosFetch>
+<NewsApp></NewsApp>
 </>
     )
 }

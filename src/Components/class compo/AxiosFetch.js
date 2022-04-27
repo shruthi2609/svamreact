@@ -8,6 +8,8 @@ class AxiosFetch extends React.Component{
         }
     }
     componentDidMount(){
+       /* fetch("https://jsonplaceholder.typicode.com/users").then((res)=>{return res.json()}).then((data)=>this.setState({result:data})).catch((err)=>console.log(err))*/
+       
         axios.get("https://jsonplaceholder.typicode.com/users").then((res)=>this.setState({result:res.data})).catch((err)=>console.log("error"))
     }
     render(){
