@@ -10,10 +10,11 @@ import APIFetch from "./Components/class compo/APIFetch"
 import APIFetchDidMount from "./Components/class compo/APIFetchDidMount"
 import AxiosFetch from "./Components/class compo/AxiosFetch"
 import NewsApp from "./Components/class compo/NewsApp"
+import PostRequest from "./Components/class compo/PostRequest"
 function App(){
     return(
 <>
-<NewsApp></NewsApp>
+<PostRequest></PostRequest>
 </>
     )
 }
