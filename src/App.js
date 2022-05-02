@@ -18,14 +18,15 @@ import UseEffectDependency from "./Components/functional compo/UseEffectDependen
 import UseRefComponent from "./Components/functional compo/UseRefComponent"
 import {Routes,Route,BrowserRouter,Link} from "react-router-dom"
 import Layout from "./Components/router components/Layout"
-import {Home,DashBoardComp,CompNotFound} from "./Components/router components/Home"
+import {Home,DashBoardComp,CompNotFound, UnAuth} from "./Components/router components/Home"
 function App(){
     return(
         <BrowserRouter>
         <Routes>
             <Route path="/" element={<Layout></Layout>}>
                 <Route index element={<Home></Home>}></Route>
-                <Route path="dashboard" element={<DashBoardComp></DashBoardComp>}></Route>
+                <Route path="dashboard/:uname" element={<DashBoardComp></DashBoardComp>}></Route>
+                <Route path="unauth" element={<UnAuth></UnAuth>}></Route>
                 <Route path="*" element={<CompNotFound></CompNotFound>}></Route>
             </Route>
         </Routes>

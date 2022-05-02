@@ -3,9 +3,8 @@ const Layout=()=>{
     return(
         <div>
         <nav>
-        <Link to="/">Home</Link> 
-        <Link to="/dashboard">DashBoard</Link>
-        <Link to="/taskman">Task Manager</Link>
+   { /*    <Link to="/">Home</Link> 
+        <Link to="/taskman">Task Manager</Link>*/}
         </nav>
         <Outlet></Outlet>
         </div>
