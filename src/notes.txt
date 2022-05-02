@@ -1,0 +1,27 @@
+/**import React from "react"
+import ReactDOM from "react-dom"
+const root=ReactDOM.createRoot(document.getElementById("root"))
+root.render(<h1>Hello</h1>)
+
+ * creating react app in react 18 and below
+ * 
+ **/
+ npm install react@18 -> upgrade from 17.0.2 to 18
+ npm install react-dom@18
+
+ //downgrade
+  npm install react@17.0.2 -> downgrade from 18 to 17.0.2
+ npm install react-dom@17.0.2
+
+
+  
+1.Basic Routing using react-router-dom v6
+<BrowserRouter>
+        <Link to="/home">NewsApp</Link>
+        <Link to="/taskman">Task</Link>
+        <Routes>
+        <Route path="/home" element={<NewsApp></NewsApp>}></Route>
+        <Route path="/taskman" element={<TaskManager></TaskManager>}></Route>
+        </Routes>
+        
+ </BrowserRouter>
