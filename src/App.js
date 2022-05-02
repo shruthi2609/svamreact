@@ -25,7 +25,7 @@ function App(){
         <Routes>
             <Route path="/" element={<Layout></Layout>}>
                 <Route index element={<Home></Home>}></Route>
-                <Route path="dashboard/:uname" element={<DashBoardComp></DashBoardComp>}></Route>
+                <Route path="dashboard/:uname/:email" element={<DashBoardComp></DashBoardComp>}></Route>
                 <Route path="unauth" element={<UnAuth></UnAuth>}></Route>
                 <Route path="*" element={<CompNotFound></CompNotFound>}></Route>
             </Route>

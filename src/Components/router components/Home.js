@@ -2,15 +2,20 @@ import { useState } from "react"
 import { useNavigate,useParams } from "react-router-dom"
 export const Home=()=>{
     const [username,setUsername]=useState("")
+    const [email,setEmail]=useState("")
     const navigate=useNavigate()
     const handleChange=(e)=>{
         e.preventDefault()
         setUsername(e.target.value)
     }
+    const handleEmail=(e)=>{
+        e.preventDefault()
+        setEmail(e.target.value)
+    }
     const handleLogin=(e)=>{
         e.preventDefault()
         if(username==="admin"){
-            navigate(`/dashboard/${username}`)
+            navigate(`/dashboard/${username}/${email}`)
         }
         else{
             navigate("/unauth")
@@ -22,18 +27,20 @@ export const Home=()=>{
             <h1>sign in</h1>
             <form>
                 Username:<input type="text" onChange={(e)=>handleChange(e)}></input>
+                Email:<input type="text" onChange={(e)=>handleEmail(e)}></input>
                 <button onClick={(e)=>handleLogin(e)}>login</button>
             </form>
         </div>
     )
 }
 export const DashBoardComp=()=>{
-    const {uname}=useParams()
+    const {uname,email}=useParams()
     return(
         <div>
             
             <h1>Dashboard Page</h1>
             <h2>Welcome {uname}</h2>
+            <h3>Email is :{email}</h3>
         </div>
     )
 }
