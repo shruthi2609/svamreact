@@ -1,7 +1,12 @@
-import CounterConnector from "./Components/CounterConnector";
+import ProfileComponent from "./Components/toolkitcomponents/ProfileComponent";
+import LoginComponent from "./Components/toolkitcomponents/LoginComponent"
 const App=()=>{
-    return(
-        <CounterConnector></CounterConnector>
-    )
+return(
+    <div>
+        <LoginComponent></LoginComponent>
+        <ProfileComponent></ProfileComponent>
+
+    </div>
+)
 }
-export default CounterConnector
+export default App;

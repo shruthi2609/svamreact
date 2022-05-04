@@ -1,16 +1,12 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {configureStore} from "@reduxjs/toolkit"
+import {createStore} from "redux"
 import { Provider } from 'react-redux';
-import App from "./App"
-import reducers from "./reducers"
-const store=configureStore(
-    {
-        reducer:{
-            userReducer:reducers
-        }
-    }
+import App from "./AppCoreRedux"
+import reducer from './reducers';
+const store=createStore(
+  reducer
 )
 ReactDOM.render(
   <>
