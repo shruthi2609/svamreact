@@ -9,4 +9,5 @@ const {count,increment,decrement}=props
         </div>
     )
 }
+
 export default CounterComp
