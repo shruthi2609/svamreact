@@ -1,3 +1,11 @@
+1.npx create-react-app projname
+2.live server
+folder backend
+cd backend
+npm install json-server
+npm init
+in scripts give this  "start":"json-server -p 3002 -w db.json"
+
 /**import React from "react"
 import ReactDOM from "react-dom"
 const root=ReactDOM.createRoot(document.getElementById("root"))
